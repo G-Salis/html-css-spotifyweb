@@ -216,7 +216,6 @@ footer{
   width: 240px;
   height: 100%;
   padding-left: 10px;
-  background-color: green;
 }
 
 
@@ -237,24 +236,35 @@ footer{
   padding-left: 20px;
 }
 
+.name_album, .favorite i{
+  padding-right: 4px;
+}
+
 .controller{
-  background-color: crimson;
+  color: white;
   text-align: center;
   min-width: 50%;
 }
 
 .controller_button i {
-  font-size: 25px;
+  font-size: 20px;
   padding: 0px 10px;
+}
+
+.controller_button i.play {
+  font-size: 25px;
+}
+
+.time span{
+  font-size: 10px;
 }
 
 .time .time_bar{
   position: relative;
   display: inline-block;
   width: 500px;
-  height: 10px;
-  background-color: orange;
- 
+  height: 5px;
+  background-color: #5A5A5A;
   border-radius: 5px;
 }
 
@@ -265,12 +275,42 @@ footer{
   z-index: 10;
   display: inline-block;
   width: 100px;
-  height: 10px;
-  background-color: violet;
+  height: 5px;
+  background-color: #C1C1C1;
   border-radius: 5px;
 }
 
 .volume{
-  background-color: cyan;
   width: 240px;
+}
+
+.volume_icon{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.volume_icon i{
+  color: white;
+  padding-right: 20px;
+}
+
+.volume .volume_bar{
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 5px;
+  background-color: #5A5A5A;
+  border-radius: 5px;
+}
+
+.volume_select{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: inline-block;
+  width: 10px;
+  height: 5px;
+  background-color: #C1C1C1;
+  border-radius: 5px;
 }
