@@ -126,7 +126,10 @@ section{
   color: white;
   border-color: white;
   cursor: pointer;
-  
+}
+
+.upgrade button:hover{
+  transform: scale(1.2);
 }
 
 /* VARIETA' SCELTA BRANI*/
