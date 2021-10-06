@@ -36,6 +36,10 @@ nav{
   padding-bottom: 10px;
 }
 
+.vertical_menu{
+  color: #808287;
+}
+
 .vertical_menu ul, .name_playlist ul{
   list-style: none;
   padding-bottom: 20px;
@@ -47,11 +51,21 @@ nav{
   cursor: pointer;
 }
 
+.vertical_menu ul li:hover{
+  color: white;
+  cursor: pointer;
+}
+
 
 .vertical_menu ul li img{
   width: 15%;
   vertical-align: middle;
 }
+
+.create_playlist{
+  color:#808287;
+}
+
 
 .create_playlist .plus{
   font-size: 50px;
@@ -59,9 +73,21 @@ nav{
   color:#808287;
 }
 
+.create_playlist:hover, .create_playlist .plus:hover {
+  vertical-align: middle;
+  color:white;
+  cursor: pointer;
+}
+
 .name_playlist{
   height: 27vh;
+  font-weight: 900;
+  color:#808287;
   overflow: auto;
+}
+
+.name_playlist ul li:hover{
+  color: white;
 }
 
 .nav_bottom{
@@ -72,6 +98,16 @@ nav{
 .install{
   border-bottom: 1px solid white;
   padding-bottom: 5px;
+  font-weight: 900;
+  color: #808287;
+  cursor: pointer;
+}
+
+.install:hover{
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+  font-weight: 900;
+  color: white;
 }
 
 .install i{
@@ -97,6 +133,7 @@ nav{
   padding-bottom: 10px;
   font-weight: 700;
   color: white;
+  cursor: text;
 }
 
 /* SEZIONE SCELTA ALBUM  */
@@ -155,6 +192,16 @@ section{
   font-weight: 900;
   font-size: 13px;
   color: #808287;
+}
+
+.category_album ul li:hover{
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 13px;
+  color: white;
 }
 
 .category_album ul li:nth-child(1){
