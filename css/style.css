@@ -110,6 +110,7 @@ section{
 /* UPGREAD */
 .upgrade{
   position: fixed;
+  z-index: 999;
   width: calc(100% - 200px);
   height: 70px;
   background-color: rgba(8, 11, 18, 0.8);
@@ -154,7 +155,25 @@ section{
   font-weight: 900;
   font-size: 13px;
   color: #808287;
-} 
+}
+
+.category_album ul li:nth-child(1){
+  position: relative;
+}
+
+.category_album ul li .line_lime{
+  position: absolute;
+  bottom: 0;
+  left: 45px;
+  width: 40px;
+  height: 2px;
+  background-color: lime;
+
+}
+
+
+
+
 
 .category_album h2{
   font-weight: 900;
