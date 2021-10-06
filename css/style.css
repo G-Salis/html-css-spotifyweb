@@ -310,6 +310,10 @@ footer{
   font-size: 25px;
 }
 
+.controller_button i.play:hover {
+  transform: scale(1.5);
+}
+
 .time span{
   font-size: 10px;
 }
