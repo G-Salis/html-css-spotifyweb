@@ -9,7 +9,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="css/style.css">
   <title>My Spotify</title>
 </head>
@@ -21,11 +23,55 @@
   <!-- Menù navigazione -->
     <nav>
 
+      <div class="nav_top">
+
+        <div class="logo">
+          <img src="img/logo.svg" alt="">
+        </div>
+        
+        <div class="vertical_menu">
+          <ul>
+            <li><img src="img/home.svg" alt=""> Menù</li>
+            <li><img src="img/search.svg" alt=""> Cerca</li>
+            <li><img src="img/libreria.svg" alt=""> La tua libreria</li>
+          </ul>
+        </div>
+
+
+        <div class="over">
+          <div class="playlist">
+            <h3>Playlist</h3>
+          </div>
+
+          <div class="create_playlist">
+            <i class="fas fa-plus-square plus"></i> Crea Playlist
+          </div>
+
+          <div class="name_playlist">
+            <ul>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+            </ul>
+          </div>
+        </div>
+    
+
+      </div>
+
+      <div class="nav_bottom">
+
+      
+      </div>
+
     </nav>
 
     <section class="main_content">
 <!-- Header fixed  -->
-      <div class="upgrade clearfix">
+      <div class="upgrade">
         <button>
           Effettua L'Upgrade
         </button>
@@ -59,7 +105,7 @@
           
           <div class="info_album">
             <div class="cover">
-              <img src="img/metal_lifting.jpg" alt="">
+              <img src="img/stranger.jpeg" alt="">
             </div>
             <div class="title">
               <h3>Stranger Things, Vol. 1 (A Netflix Original Series Soundtrack)</h3>
@@ -69,7 +115,7 @@
 
           <div class="info_album">
             <div class="cover">
-              <img src="img/metal_lifting.jpg" alt="">
+              <img src="img/aquietplace.jpeg" alt="">
             </div>
             <div class="title">
               <h3>A quiet place</h3>
@@ -79,7 +125,7 @@
 
           <div class="info_album">
             <div class="cover">
-              <img src="img/metal_lifting.jpg" alt="">
+              <img src="img/split.jpeg" alt="">
             </div>
             <div class="title">
               <h3>Split</h3>
@@ -89,7 +135,7 @@
 
           <div class="info_album">
             <div class="cover">
-              <img src="img/metal_lifting.jpg" alt="">
+              <img src="img/cure.jpeg" alt="">
             </div>
             <div class="title">
               <h3>A cure for wellness</h3>
@@ -99,7 +145,7 @@
 
           <div class="info_album">
             <div class="cover">
-              <img src="img/metal_lifting.jpg" alt="">
+              <img src="img/sinister.jpeg" alt="">
             </div>
             <div class="title">
               <h3>Sinister</h3>
@@ -108,31 +154,56 @@
           </div>
         </div>
 
+
        <h2>Creato per Giuseppe Salis</h2>
        <h6>Più ascolti, più accurati saranno i suggerimenti.</h6>
-       <div class="album">
 
+       <div class="album">
 
         <div class="info_album">
           <div class="cover">
-            <img src="img/metal_lifting.jpg" alt="">
+            <img src="img/radar.jpeg" alt="">
           </div>
           <div class="title">
-            <h3>Heavy Metal</h3>
-            <h6>Subtitle</h6>
+            <h3>Release Radar</h3>
           </div>
         </div>
         
         <div class="info_album">
           <div class="cover">
-            <img src="img/metal_lifting.jpg" alt="">
+            <img src="img/mixdaily.jpeg" alt="">
           </div>
           <div class="title">
-            <h3>Stranger Things, Vol. 1 (A Netflix Original Series Soundtrack)</h3>
-            <h6>Kyle Dixon & Michael Stein</h6>
+            <h3>Daily Mix 1</h3>
           </div>
         </div>
       </div>
+
+        <h2>Artisti più popolari</h2>
+        <h6>Più ascolti, più accurati saranno i suggerimenti.</h6>
+        
+        <div class="album">
+ 
+ 
+         <div class="info_album">
+           <div class="cover">
+             <img class="circle" src="img/einaudi.jpeg" alt="">
+           </div>
+           <div class="title">
+             <h3>Federico Enauidi</h3>
+           </div>
+         </div>
+         
+         <div class="info_album">
+           <div class="cover">
+             <img class="circle" src="img/youg.jpeg" alt="">
+           </div>
+           <div class="title">
+             <h3>Lana del Rey</h3>
+           </div>
+         </div>
+
+      
       </div>
 
     </section>
