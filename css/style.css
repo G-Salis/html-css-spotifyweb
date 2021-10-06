@@ -24,12 +24,13 @@ nav{
   padding: 20px;
   background-color: black;
   color: white;
+  overflow: hidden;
 }
 
 .nav_top{
   width: 100%;
-  height: calc(100% - 100px);
-  min-height: 250px;
+  height: calc(100% - 60px);
+  min-height: 450px;
 }
 .logo{
   padding-bottom: 10px;
@@ -46,6 +47,7 @@ nav{
   cursor: pointer;
 }
 
+
 .vertical_menu ul li img{
   width: 15%;
   vertical-align: middle;
@@ -55,19 +57,46 @@ nav{
   font-size: 50px;
   vertical-align: middle;
   color:#808287;
-
 }
 
 .name_playlist{
-  height: 50vh;
+  height: 27vh;
   overflow: auto;
 }
 
 .nav_bottom{
   width: 100%;
-  min-height: 100px;
-  overflow: hidden;
+  height: 60px;
+}
+
+.install{
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+}
+
+.install i{
+  background-color: white;
+  color: black;
+  border-radius: 50%; 
+  cursor: pointer;
+}
+
+.user{
+  padding-top: 10px;
+}
+
+.user img{
+  width: 15%;
+  vertical-align: middle;
   background-color: grey;
+  border-radius: 50%; 
+  cursor: pointer;
+}
+
+.user span{
+  padding-bottom: 10px;
+  font-weight: 700;
+  color: white;
 }
 
 /* SEZIONE SCELTA ALBUM  */
@@ -173,5 +202,5 @@ section{
 footer{
   width: 100%;
   height: 70px;
-  background-color: rgb(245, 241, 0);
+  background-color: #282828;
 }
