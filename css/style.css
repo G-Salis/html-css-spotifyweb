@@ -200,7 +200,77 @@ section{
 }
 
 footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 70px;
   background-color: #282828;
+}
+
+.play_album{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  width: 240px;
+  height: 100%;
+  padding-left: 10px;
+  background-color: green;
+}
+
+
+.small_album{
+  width: 25%;
+}
+
+
+.small_album img{
+  width: 100%;
+}
+
+.name_album h6{
+  color: #808287;
+}
+
+.name_album, .favorite{
+  padding-left: 20px;
+}
+
+.controller{
+  background-color: crimson;
+  text-align: center;
+  min-width: 50%;
+}
+
+.controller_button i {
+  font-size: 25px;
+  padding: 0px 10px;
+}
+
+.time .time_bar{
+  position: relative;
+  display: inline-block;
+  width: 500px;
+  height: 10px;
+  background-color: orange;
+ 
+  border-radius: 5px;
+}
+
+.time_passed{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: inline-block;
+  width: 100px;
+  height: 10px;
+  background-color: violet;
+  border-radius: 5px;
+}
+
+.volume{
+  background-color: cyan;
+  width: 240px;
 }
