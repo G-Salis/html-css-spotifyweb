@@ -36,6 +36,7 @@ nav{
   padding-bottom: 10px;
 }
 
+/* Appare con il responsive xs */
 .logo_small{
   display: none;
   padding-bottom: 10px;
@@ -57,10 +58,6 @@ nav{
   cursor: pointer;
 }
 
-/* .vertical_menu ul li:nth-child(1){
-  border-left: 5px solid lime;
-} */
-
 .vertical_menu ul li:hover{
   color: white;
   cursor: pointer;
@@ -72,10 +69,12 @@ nav{
   vertical-align: middle;
 }
 
+
 .over{
   overflow: hidden;
 }
 
+/* Sezione Playlist */
 .create_playlist{
   color:#808287;
 }
@@ -92,6 +91,7 @@ nav{
   cursor: pointer;
 }
 
+/* Varie playlist personali */
 .name_playlist{
   height: 29vh;
   font-weight: 900;
@@ -108,6 +108,7 @@ nav{
   height: 60px;
 }
 
+/* Sezione Installa app */
 .install{
   border-bottom: 1px solid white;
   padding-bottom: 5px;
@@ -130,6 +131,7 @@ nav{
   cursor: pointer;
 }
 
+/* Nome Utente */
 .user{
   padding-top: 10px;
 }
@@ -157,7 +159,7 @@ section{
   width: calc(100% - 200px);
 }
 
-/* UPGREAD */
+/* UPGREADE */
 .upgrade{
   position: fixed;
   z-index: 999;
@@ -253,14 +255,21 @@ section{
 .cover{
   position: relative;
   margin-bottom: 10px;
+  
 }
 
 .start{
-  display: none;
+  transition: all 1s;
 }
 
 .icon_start{
-  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0px;
+  color: white;
+  transition: color 1s, font-size 1s;
 }
 
 .cover:hover .start{
@@ -272,19 +281,13 @@ section{
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  display: block;
 }
 
 .cover:hover .icon_start{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 100px;
+  font-size: 70px;
   color: white;
   z-index: 100;
   cursor: pointer;
-  display: block;
 }
 
 
@@ -312,6 +315,9 @@ section{
   color: #5D6066;
 }
 
+
+
+/* Footer */
 footer{
   display: flex;
   justify-content: space-between;
@@ -321,6 +327,7 @@ footer{
   background-color: #282828;
 }
 
+/* Sezione musica in riproduzione */
 .play_album{
   display: flex;
   justify-content: flex-start;
@@ -365,6 +372,7 @@ footer{
   color: white;
 }
 
+/* Sezione di controllo della musica */
 .controller{
   color: white;
   text-align: center;
@@ -407,7 +415,7 @@ footer{
   cursor: pointer;
 }
 
-.time_passed{
+.time_passed, .volume_select{
   position: absolute;
   display: inline-block;
   top: 0;
@@ -418,13 +426,21 @@ footer{
   height: 5px;
   background-color: #C1C1C1;
   border-radius: 5px;
+  transition: all 3s linear;
+}
+
+.time_passed:hover, .volume_select:hover{
+  width: 60%;
+  background-color: lime;
 }
 
 .highlighted_bar{
   display: none;
 }
 
-.time_bar:hover .highlighted_bar{
+/* Animazione Hover standard */
+
+/* .time_bar:hover .highlighted_bar{
   position: absolute;
   display: inline-block;
   top: 0;
@@ -435,25 +451,38 @@ footer{
   background-color: lime;
   border-radius: 5px;
   cursor: pointer;
-}
+} */
 
 .circle_bar{
   display: none;
 }
 
+/* Selettore delle barre */
 .time_bar:hover .circle_bar, .volume_bar:hover .circle_bar{
   position: absolute;
   display: inline-block;
   z-index: 111;
   bottom: -7px;
-  left: 50%;
+  left: 20%;
   width: 20px;
   height: 20px;
   background-color: #C1C1C1;
   border-radius: 50%;
   cursor: pointer;
+  animation: move 3s linear forwards ;
 }
 
+@keyframes move{
+  0% {
+    left: 20%;
+  }
+
+  100% {
+    left: 57%;
+  }
+}
+
+/* opzioni volume */
 .volume{
   display: flex;
   align-items: center;
@@ -483,7 +512,8 @@ footer{
   border-radius: 5px;
 }
 
-.volume_bar:hover .highlighted_bar{
+/* Animazione Hover standard */
+/* .volume_bar:hover .highlighted_bar{
   position: absolute;
   display: inline-block;
   top: 0;
@@ -495,7 +525,7 @@ footer{
   background-color: lime;
   border-radius: 5px;
   cursor: pointer;
-}
+} */
 
 .volume_select{
   position: absolute;
@@ -503,13 +533,15 @@ footer{
   left: 0;
   z-index: 10;
   display: inline-block;
-  width: 10px;
+  width: 20%;
   height: 5px;
   background-color: #C1C1C1;
   border-radius: 5px;
 }
 
-/* MEDIA BREAKPOINT */
+
+
+/* RESPONSIVE BREAKPOINT */
 @media (max-width: 1100px){
 
   .album{
