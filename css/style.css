@@ -362,8 +362,12 @@ footer{
   width: 50%;
 }
 
+.controller_button{
+  width: 100%;
+}
+
 .controller_button i {
-  font-size: 20px;
+  font-size: 100%;
   padding: 0px 10px;
   cursor: pointer;
 }
@@ -487,7 +491,7 @@ footer{
   border-radius: 5px;
 }
 
-
+/* MEDIA BREAKPOINT */
 @media (max-width: 1100px){
 
   .album{
@@ -501,10 +505,20 @@ footer{
     width: 25%;
   }
 
+}
 
 
+@media (max-width: 770Px){
 
+  .album{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+  }
 
-
+  .info_album{
+    width: 50%;
+  }
 
 }
