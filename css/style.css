@@ -30,11 +30,17 @@ nav{
 .nav_top{
   width: 100%;
   height: calc(100% - 60px);
-  min-height: 450px;
+  min-height: 490px;
 }
 .logo{
   padding-bottom: 10px;
 }
+
+.logo_small{
+  display: none;
+  padding-bottom: 10px;
+}
+
 
 .vertical_menu{
   color: #808287;
@@ -42,7 +48,7 @@ nav{
 
 .vertical_menu ul, .name_playlist ul{
   list-style: none;
-  padding-bottom: 20px;
+  padding-top: 10px;
 }
 
 .vertical_menu ul li, .name_playlist ul li{
@@ -66,10 +72,13 @@ nav{
   vertical-align: middle;
 }
 
+.over{
+  overflow: hidden;
+}
+
 .create_playlist{
   color:#808287;
 }
-
 
 .create_playlist .plus{
   font-size: 50px;
@@ -84,7 +93,7 @@ nav{
 }
 
 .name_playlist{
-  height: 27vh;
+  height: 29vh;
   font-weight: 900;
   color:#808287;
   overflow: auto;
@@ -363,6 +372,10 @@ footer{
 }
 
 .controller_button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   width: 100%;
 }
 
@@ -417,7 +430,6 @@ footer{
   top: 0;
   left: 0;
   z-index: 10;
-  display: inline-block;
   width: 52%;
   height: 5px;
   background-color: lime;
@@ -443,12 +455,18 @@ footer{
 }
 
 .volume{
+  display: flex;
+  align-items: center;
   width: 240px;
+  text-align: right;
+  padding: 0px 5px;
 }
 
 .volume_icon{
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
 }
 
 .volume_icon i{
@@ -459,7 +477,7 @@ footer{
 .volume .volume_bar{
   position: relative;
   display: inline-block;
-  width: 100px;
+  width: 43%;
   height: 5px;
   background-color: #5A5A5A;
   border-radius: 5px;
@@ -508,7 +526,7 @@ footer{
 }
 
 
-@media (max-width: 770Px){
+@media (max-width: 770px){
 
   .album{
     display: flex;
@@ -522,3 +540,76 @@ footer{
   }
 
 }
+
+
+@media (max-width: 575px){
+
+  .album{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+  }
+
+  .info_album{
+    width: 50%;
+  }
+
+  nav{
+    float: left;
+    height: calc(100vh - 70px);
+    width: 80px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+  }
+
+  section{
+    float: left;
+    height: calc(100vh - 70px);
+    overflow: auto;
+    width: calc(100% - 80px);
+  }
+
+  .upgrade{
+    position: fixed;
+    z-index: 999;
+    width: calc(100% - 80px);
+    height: 70px;
+    background-color: rgba(8, 11, 18, 0.8);
+    text-align: right;
+  }
+
+  .logo, .vertical_menu ul li span, .over, .install span, .user span{
+    display: none;
+  }
+
+  .logo_small{
+    display: block;
+    width: 100%;
+  }
+
+  .vertical_menu ul li img{
+    width: 100%;
+  }
+
+  .install{
+    text-align: center;
+    border: none;
+  }
+
+  .user{
+    text-align: center;
+  }
+
+  .user img{
+    width: 80%;
+  }
+
+
+
+}
+
+  
