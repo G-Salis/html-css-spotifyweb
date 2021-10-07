@@ -51,6 +51,10 @@ nav{
   cursor: pointer;
 }
 
+/* .vertical_menu ul li:nth-child(1){
+  border-left: 5px solid lime;
+} */
+
 .vertical_menu ul li:hover{
   color: white;
   cursor: pointer;
@@ -334,12 +338,24 @@ footer{
   color: #808287;
 }
 
+.name_album h6:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  color: white;
+}
+
 .name_album, .favorite{
   padding-left: 20px;
+  color: #808287;
 }
 
 .name_album, .favorite i{
   padding-right: 4px;
+}
+
+.name_album, .favorite i:hover{
+  padding-right: 4px;
+  color: white;
 }
 
 .controller{
@@ -372,10 +388,12 @@ footer{
   height: 5px;
   background-color: #5A5A5A;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .time_passed{
   position: absolute;
+  display: inline-block;
   top: 0;
   left: 0;
   z-index: 10;
@@ -384,6 +402,41 @@ footer{
   height: 5px;
   background-color: #C1C1C1;
   border-radius: 5px;
+}
+
+.highlighted_bar{
+  display: none;
+}
+
+.time_bar:hover .highlighted_bar{
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: inline-block;
+  width: 255px;
+  height: 5px;
+  background-color: lime;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.circle_bar{
+  display: none;
+}
+
+.time_bar:hover .circle_bar, .volume_bar:hover .circle_bar{
+  position: absolute;
+  display: inline-block;
+  z-index: 111;
+  bottom: -7px;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #C1C1C1;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .volume{
@@ -407,6 +460,20 @@ footer{
   height: 5px;
   background-color: #5A5A5A;
   border-radius: 5px;
+}
+
+.volume_bar:hover .highlighted_bar{
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: inline-block;
+  width: 55px;
+  height: 5px;
+  background-color: lime;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .volume_select{
